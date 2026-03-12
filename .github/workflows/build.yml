@@ -20,6 +20,11 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Fix gradle.properties (remove invalid JVM flag)
+        run: |
+          sed -i 's/-XX:MaxPermSize=[^ ]*//g' gradle.properties
+          cat gradle.properties
+
       - name: Install Gradle & generate wrapper
         run: |
           wget -q https://services.gradle.org/distributions/gradle-8.2-bin.zip
@@ -28,7 +33,7 @@ jobs:
           chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
