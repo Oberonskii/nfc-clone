@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NFC Clone</string>
+    <string name="read_nfc_tags">NFC Tags lesen</string>
+    <string name="emulate_nfc">NFC emulieren</string>
+    <string name="nfc_service_description">NFC Card Emulation Service</string>
+    <string name="tag_info">Tag Information</string>
+    <string name="id">ID</string>
+    <string name="type">Typ</string>
+    <string name="technology">Technologie</string>
+    <string name="ndef_message">NDEF Nachricht</string>
+    <string name="emulation_enabled">Emulation aktiviert</string>
+    <string name="no_data">Keine Daten vorhanden</string>
+    <string name="copy">Kopieren</string>
+    <string name="copied">Kopiert!</string>
+</resources>

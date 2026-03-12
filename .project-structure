@@ -1,0 +1,43 @@
+<!-- Project structure documentation -->
+NFC Clone - Projektstruktur und Architektur
+
+## Verzeichnisübersicht
+
+/workspaces/nfc-clone/
+├── app/                                    # Android-App-Modul
+│   ├── build.gradle.kts                   # Gradle-Konfiguration
+│   ├── proguard-rules.pro                 # ProGuard-Regeln
+│   └── src/
+│       └── main/
+│           ├── kotlin/com/example/nfcclone/
+│           │   ├── MainActivity.kt         # Startaktivität
+│           │   ├── NFCCloneApplication.kt  # Application-Klasse
+│           │   ├── nfc/                    # NFC-Funktionalität
+│           │   │   ├── NfcManager.kt      # NFC-Verwaltung & Hilfsfunktionen
+│           │   │   ├── NfcTagData.kt      # Datenklasse für Tag-Informationen
+│           │   │   ├── NfcDiscoveryActivity.kt  # Tag-Discovery Handler
+│           │   │   └── HostCardEmulationService.kt # HCE-Service
+│           │   └── ui/                     # UI-Layer
+│           │       ├── screens/
+│           │       │   └── HomeScreen.kt  # Hauptbildschirm mit Tabs
+│           │       └── theme/
+│           │           ├── Theme.kt       # Farbschema & Komposables
+│           │           └── Type.kt        # Typografie
+│           ├── res/
+│           │   ├── values/
+│           │   │   ├── strings.xml        # String-Ressourcen
+│           │   │   ├── colors.xml         # Farbdefinitionen
+│           │   │   └── themes.xml         # Android-Themes
+│           │   └── xml/
+│           │       ├── nfc_tech_filter.xml        # NFC-Technologie-Filter
+│           │       ├── nfc_applet_config.xml     # HCE-Applet-Konfiguration
+│           │       ├── backup_rules.xml          # Backup-Regeln
+│           │       └── data_extraction_rules.xml # Daten-Extraktionsregeln
+│           └── AndroidManifest.xml       # App-Manifest
+│
+├── build.gradle.kts                       # Root-Gradle-Datei
+├── settings.gradle.kts                    # Gradle-Einstellungen
+├── gradle.properties                      # Gradle-Eigenschaften
+├── .gitignore                             # Git-Ignores
+├── README.md                              # Dokumentation
+└── .git/                                  # Git-Repository
