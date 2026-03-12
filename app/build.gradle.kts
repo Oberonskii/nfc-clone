@@ -63,8 +63,6 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.2.0")
     implementation("androidx.activity:activity-compose:1.8.1")
 
-    // NFC
-    implementation("androidx.nfc:nfc:1.1.0")
 
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
